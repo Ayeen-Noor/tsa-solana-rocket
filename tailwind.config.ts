@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,7 +62,13 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+				// $TSA Brand Colors
+				'tsa-orange': '#FF6B35',
+				'tsa-red': '#D32F2F', 
+				'tsa-gold': '#FFD700',
+				'tsa-cosmic': '#1a0f3a',
+				'tsa-cosmic-light': '#2d1b5c'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -84,11 +91,36 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'float': {
+					'0%, 100%': { transform: 'translateY(0px)' },
+					'50%': { transform: 'translateY(-20px)' }
+				},
+				'pulse-glow': {
+					'0%, 100%': { boxShadow: '0 0 20px rgba(255, 107, 53, 0.5)' },
+					'50%': { boxShadow: '0 0 40px rgba(255, 107, 53, 0.8)' }
+				},
+				'rotate-slow': {
+					'from': { transform: 'rotate(0deg)' },
+					'to': { transform: 'rotate(360deg)' }
+				},
+				'scale-bounce': {
+					'0%, 100%': { transform: 'scale(1)' },
+					'50%': { transform: 'scale(1.05)' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'float': 'float 6s ease-in-out infinite',
+				'pulse-glow': 'pulse-glow 2s ease-in-out infinite',
+				'rotate-slow': 'rotate-slow 20s linear infinite',
+				'scale-bounce': 'scale-bounce 3s ease-in-out infinite'
+			},
+			backgroundImage: {
+				'cosmic-gradient': 'linear-gradient(135deg, #FF6B35 0%, #D32F2F 50%, #1a0f3a 100%)',
+				'tsa-gradient': 'linear-gradient(45deg, #FF6B35 0%, #FFD700 50%, #D32F2F 100%)',
+				'space-pattern': 'radial-gradient(circle at 25% 25%, #FFD700 2px, transparent 2px), radial-gradient(circle at 75% 75%, #FF6B35 1px, transparent 1px)'
 			}
 		}
 	},
