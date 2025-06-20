@@ -88,7 +88,7 @@ const FeaturesSection = () => {
         {/* Bottom stats */}
         <div className="mt-16 grid grid-cols-1 md:grid-cols-4 gap-6 text-center">
           <div className="bg-tsa-gradient/20 backdrop-blur-md rounded-lg p-6 border border-tsa-gold/30">
-            <div className="text-3xl font-bold text-tsa-gold mb-2">< 1s</div>
+            <div className="text-3xl font-bold text-tsa-gold mb-2">&lt; 1s</div>
             <div className="text-white">Transaction Speed</div>
           </div>
           <div className="bg-tsa-gradient/20 backdrop-blur-md rounded-lg p-6 border border-tsa-gold/30">
