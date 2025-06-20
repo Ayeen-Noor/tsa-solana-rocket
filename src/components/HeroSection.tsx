@@ -4,7 +4,7 @@ import { Circle } from 'lucide-react';
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-cosmic-gradient">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-cosmic-gradient pt-20">
       {/* Animated background elements */}
       <div className="absolute inset-0 space-pattern opacity-20"></div>
       
